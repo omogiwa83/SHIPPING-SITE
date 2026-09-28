@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXT WAVES LTD - Global Logistics & Shipping</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="logo.png" alt="Nextwaves Ltd">
+    <h2>NEXT WAVES LTD</h2>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#track">Track</a>
+    <a href="#quote">Quote</a>
+  </nav>
+  <a href="https://wa.me/2348137375251" class="btn-top">WhatsApp Us</a>
+</header>
+
+<section class="hero" id="home">
+  <h1>Ship Worldwide, Fast & Secure</h1>
+  <p>Air Freight • Sea Freight • Road Freight • Warehousing & Distribution</p>
+  
+  <div class="track-box" id="track">
+    <h3>Track Your Shipment</h3>
+    <div class="track-input">
+      <input type="text" id="trackId" placeholder="Enter Tracking Number e.g. NW123456">
+      <button onclick="trackNow()">TRACK NOW</button>
+    </div>
+    <p id="trackResult"></p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2 class="section-title">Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>✈️ Air Freight</h3>
+      <p>Urgent deliveries worldwide in 3-5 days. Safe handling for your valuable cargo.</p>
+    </div>
+    <div class="card">
+      <h3>🚢 Sea Freight</h3>
+      <p>Cost-effective FCL & LCL shipping for bulk goods and containers.</p>
+    </div>
+    <div class="card">
+      <h3>🚚 Road Freight</h3>
+      <p>Reliable door-to-door trucking across Nigeria and West Africa.</p>
+    </div>
+    <div class="card">
+      <h3>🏬 Warehousing</h3>
+      <p>Secure storage, inventory management and last-mile delivery.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="why-box">
+    <h2>Why Choose NEXT WAVES LTD?</h2>
+    <ul>
+      <li>✔️ 24/7 Customer Support & Real-time Tracking</li>
+      <li>✔️ Affordable Rates, No Hidden Charges</li>
+      <li>✔️ Licensed & Insured Global Network</li>
+      <li>✔️ Fast Customs Clearance</li>
+    </ul>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <h2>Get a Free Quote Today</h2>
+  <p>Fill the form and we will reply on WhatsApp in 5 minutes</p>
+  <form onsubmit="sendToWhatsApp(event)">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="route" placeholder="From → To (e.g. Lagos → UK)" required>
+    <input type="text" id="weight" placeholder="Weight / Package Type" required>
+    <button type="submit">GET QUOTE ON WHATSAPP</button>
+  </form>
+</section>
+
+<a href="https://wa.me/2348137375251" class="whatsapp-float">💬</a>
+
+<footer>
+  <p><strong>NEXT WAVES LTD</strong> - Your Trusted Logistics Partner</p>
+  <p>WhatsApp: +234 813 737 5251 | Email: info@nextwavesltd.com</p>
+  <p>© 2026 Next Waves Ltd. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
